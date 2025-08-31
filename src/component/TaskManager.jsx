@@ -17,7 +17,7 @@ function TaskManager() {
         <ul>
             {tasks.map((task) => (
             <li key={task.id}>
-            {task.text} <button onClick={() => removeTask(task.id)}>Remove</button>
+            {task.text} <button onClick={() => removeTask(task.id)}>Remove </button>
             </li>
             ))}
         </ul>
