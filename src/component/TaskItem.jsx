@@ -13,7 +13,7 @@ const TaskContainer = styled.div`
 `;
 const TaskText = styled.span`
     text-decoration: ${(props) => (props.completed ? "line-through" : "none")};
-    opacity: 0.6;
+    opacity: ${(props) => (props.completed ? 0.6 : 1)};
 `;
 
 function TaskItem({ task }) {
